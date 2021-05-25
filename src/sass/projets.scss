@@ -1,0 +1,52 @@
+.projet_box {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.image_projet{
+    height: 190px;
+}
+
+.projet_card{
+    width: 18rem;
+ //   background-color: rgb(70, 46, 46);
+    height: 140px;
+   
+}
+
+.projet_box{
+  //  background-color: rgb(70, 46, 46);
+    height: 390px;
+    margin-top: 5px;
+  
+
+}
+
+.card_body{
+  //  background-color: rgb(26, 224, 175);
+   
+}
+
+.card-title{
+    height: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #37423b;
+    transition: 0.3s;
+  //  background-color: yellow;
+
+}
+
+
+.card-title:hover{
+
+    color:  #ed5b5b;
+}
+
+
+.card-text{
+
+    color: rgb(0, 0, 0);
+    height: 68px;
+    overflow: hidden;
+}
