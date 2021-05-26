@@ -130,14 +130,15 @@
     <section id="services" class="services">
         <div class="container" data-aos="fade-up">
 
-            <div class="section-title">
+            <div class="section-title_projet">
                 <h2>COMPETENCES</h2>
                 <p>MES COMPETENCES</p>
             </div>
 
-            <div class="row">
+            <div class="row d-flex flex-wrap justify-content-center align-items-center">
 
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-lg-4 col-md-6 col-10 d-flex align-items-stretch" data-aos="zoom-in"
+                    data-aos-delay="100">
                     <div class="icon-box skills_card">
                         <div class="icon">
                             <img class="card-img-top img--skills" src="./img/icons skills2/boostrap.png"
@@ -148,7 +149,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+                <div class="col-lg-4 col-md-6 col-10 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
                     data-aos-delay="200">
                     <div class="icon-box skills_card">
                         <div class="icon">
@@ -162,7 +163,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+                <div class="col-lg-4 col-md-6 col-10 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
                     data-aos-delay="300">
                     <div class="icon-box skills_card">
                         <div class="icon">
@@ -174,7 +175,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-lg-4 col-md-6 col-10 d-flex align-items-stretch mt-4" data-aos="zoom-in"
+                    data-aos-delay="100">
                     <div class="icon-box skills_card">
                         <div class="icon">
                             <img class="card-img-top img--skills" src="./img/icons skills2/react.png"
@@ -185,7 +187,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="col-lg-4 col-md-6 col-10 d-flex align-items-stretch mt-4" data-aos="zoom-in"
+                    data-aos-delay="200">
                     <div class="icon-box skills_card">
                         <div class="icon">
                             <img class="card-img-top img--skills" src="./img/icons skills2/js.png" alt="Card image cap">
@@ -196,7 +199,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="col-lg-4 col-md-4 col-10 d-flex align-items-stretch mt-4" data-aos="zoom-in"
+                    data-aos-delay="300">
                     <div class="icon-box skills_card">
                         <div class="icon">
                             <img class="card-img-top img--skills" src="./img/icons skills2/html.png"
@@ -214,180 +218,182 @@
 
 
     <!-- Carousel wrapper -->
-    <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2"
-                aria-label="Slide 3"></button>
+
+    <div class="container">
+        <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Inner -->
+            <div class="carousel-inner">
+                <!-- Single item -->
+                <div class="carousel-item active">
+                    <img src="img/business-work-area.jpg" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <img src="img/business-work-area.jpg" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <img src="img/business-work-area.jpg" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Inner -->
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample"
+                data-mdb-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample"
+                data-mdb-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-
-        <!-- Inner -->
-        <div class="carousel-inner">
-            <!-- Single item -->
-            <div class="carousel-item active">
-                <img src="img/business-work-area.jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
-            </div>
-
-            <!-- Single item -->
-            <div class="carousel-item">
-                <img src="img/business-work-area.jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-
-            <!-- Single item -->
-            <div class="carousel-item">
-                <img src="img/business-work-area.jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Inner -->
-
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample"
-            data-mdb-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample"
-            data-mdb-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
     <!-- Carousel wrapper -->
 
-    <section class="section section--projet" id="projets">
-        <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2> PROJETS</h2>
-                <p> mes Projets</p>
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title_projet">
+                <h2>PROJETS</h2>
+                <p>MES PROJETS</p>
             </div>
 
+            <div class="row d-flex flex-wrap justify-content-center align-items-center">
 
-
-            <div class="container col-lg-12 col-md-12 col-8 d-flex align-items-center justify-content-evenly">
-
-                <div class="row" id="projets_card">
-
-                    <div class="col-md-4 projet_box">
-
-                        <div class="card projet_card">
-                            <img class="card-img-top image_projet" src="./img/pagekd2.png" alt="Card image cap ">
-                            <div class="card-body">
-                                <h5 class="card-title">PAGE DE LA KD</h5>
-                                <p class="card-text">Reproduction pour desktop de la page d’accueil de Kinshasa digital
-                                    agence</p>
-                                <div className="btn-group me-2" role="group" aria-label="Second group">
-
-                                    <button class="favorite styled" type="button">
-                                        VOIR
-                                    </button>
-                                </div>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-10 d-flex align-items-stretch" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <div class="icon-box skills_card">
+                        <div class="project">
+                            <img class="card-img-top img-skills" src="./img/pagekd2.png" alt="Card image cap">
                         </div>
+                        <h4><a href="">PAGE DE LA KINSHASA DIGITAL</a></h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                     </div>
+                </div>
 
-                    <div class="col-md-4 projet_box">
-
-                        <div class="card projet_card">
-                            <img class="card-img-top image_projet" src="./img/pagekd2.png" alt="Card image cap ">
-                            <div class="card-body">
-                                <h5 class="card-title ">PAGE DE LA KD</h5>
-                                <p class="card-text ">Reproduction pour desktop de la page d’accueil de Kinshasa digital
-                                    agence</p>
-                                <div className="btn-group me-2" role="group" aria-label="Second group">
-
-                                    <button class="favorite styled" type="button">
-                                        VOIR
-                                    </button>
-                                </div>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-10 d-flex align-items-stretch" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <div class="icon-box skills_card">
+                        <div class="project">
+                            <img class="card-img-top img-skills" src="./img/projetcoding.jpg" alt="Card image cap">
                         </div>
+                        <h4><a href="">PAGE DE LA KINSHASA DIGITAL</a></h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                     </div>
-                    <div class="col-md-4 projet_box">
+                </div>
 
-                        <div class="card projet_card">
-                            <img class="card-img-top image_projet" src="./img/pagekd2.png" alt="Card image cap ">
-                            <div class="card-body">
-                                <h5 class="card-title ">PAGE DE LA KD</h5>
-                                <p class="card-text ">Reproduction pour desktop de la page d’accueil de Kinshasa digital
-                                    agence</p>
-                                <div className="btn-group me-2" role="group" aria-label="Second group">
 
-                                    <button class="favorite styled" type="button">
-                                        VOIR
-                                    </button>
-                                </div>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-10 d-flex align-items-stretch" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <div class="icon-box skills_card">
+                        <div class="project">
+                            <img class="card-img-top img-skills" src="./img/pagekd2.png" alt="Card image cap">
                         </div>
+                        <h4><a href="">FORMULAIRE DE CONTACT</a></h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                     </div>
+                </div>
 
-                    <div class="col-md-4 projet_box">
-
-                        <div class="card projet_card">
-                            <img class="card-img-top image_projet" src="./img/pagekd2.png" alt="Card image cap ">
-                            <div class="card-body">
-                                <h5 class="card-title ">PAGE DE LA KD</h5>
-                                <p class="card-text ">Reproduction pour desktop de la page d’accueil de Kinshasa digital
-                                    agence</p>
-                                <div className="btn-group me-2" role="group" aria-label="Second group">
-
-                                    <button class="favorite styled" type="button">
-                                        VOIR
-                                    </button>
-                                </div>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-10 d-flex align-items-stretch" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <div class="icon-box skills_card">
+                        <div class="project">
+                            <img class="card-img-top img-skills" src="./img/projetcoding2.jpg" alt="Card image cap">
                         </div>
+                        <h4><a href="">PAGE DE LA KINSHASA DIGITAL</a></h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                     </div>
+                </div>
 
-                    <div class="col-md-4 projet_box">
+            </div>
 
-                        <div class="card projet_card">
-                            <img class="card-img-top image_projet" src="./img/pagekd2.png" alt="Card image cap ">
-                            <div class="card-body">
-                                <h5 class="card-title ">PAGE DE LA KD</h5>
-                                <p class="card-text ">Reproduction pour desktop de la page d’accueil de Kinshasa digital
-                                    agence</p>
-                                <div className="btn-group me-2" role="group" aria-label="Second group">
+        </div>
+    </section><!-- End Services Section -->
 
-                                    <button class="favorite styled" type="button">
-                                        VOIR
-                                    </button>
-                                </div>
-                            </div>
+
+
+
+
+
+
+    <div class="container-fluid section_service_bg">
+        <div class="container">
+            <div class="section-title mt-5" data-aos="fade-up">
+                <h2> SERVICES</h2>
+                <p> MES SERVICES </p>
+
+                <sliderbtn></sliderbtn>
+            </div>
+            <div class="row">
+
+                <div class="col-12 col-sm-12 col-sd-12 col-lg-12 col-xl-12 mb-2 d-flex service_card_box">
+
+
+
+
+
+                    <div
+                        class="col-12 col-sm-4 col-sd-6 col-lg-6 col-xl-6 d-flex justify-content-md-center align-items-center service_card">
+                        <div class="image_service_box">
+                            <img class="img-service" src="./img/projetcoding2.jpg" alt="Card image cap">
                         </div>
                     </div>
 
 
-                    <div class="col-md-4 projet_box">
 
-                        <div class="card projet_card">
-                            <img class="card-img-top image_projet" src="./img/pagekd2.png" alt="Card image cap ">
-                            <div class="card-body">
-                                <h5 class="card-title ">PAGE DE LA KD</h5>
-                                <p class="card-text ">Reproduction pour desktop de la page d’accueil de Kinshasa digital
-                                    agence</p>
-                                <div className="btn-group me-2" role="group" aria-label="Second group">
 
-                                    <button class="favorite styled" type="button">
-                                        VOIR
-                                    </button>
-                                </div>
-                            </div>
+                    <div
+                        class="col-12 col-sm-4 col-sd-6 col-lg-6 col-xl-6 d-flex justify-content-md-center align-items-center service_card">
+                        <div class="image_service_box">
+                            <img class="img-service" src="./img/projetcoding2.jpg" alt="Card image cap">
+                        </div>
+                    </div>
+
+
+
+                    <div
+                        class="col-12 col-sm-4 col-sd-6 col-lg-6 col-xl-6 d-flex justify-content-md-center align-items-center service_card">
+                        <div class="image_service_box">
+                            <img class="img-service" src="./img/projetcoding2.jpg" alt="Card image cap">
+                        </div>
+                    </div>
+
+
+
+
+                    <div
+                        class="col-12 col-sm-4 col-sd-6 col-lg-6 col-xl-6 d-flex justify-content-md-center align-items-center service_card">
+                        <div class="image_service_box">
+                            <img class="img-service" src="./img/projetcoding2.jpg" alt="Card image cap">
                         </div>
                     </div>
 
@@ -396,12 +402,7 @@
                 </div>
             </div>
         </div>
-
-    </section>
-
-
-
-
+    </div>
 
     <footer class="footerbg text-start text-white" id="footer">
         <div class="footer-top">

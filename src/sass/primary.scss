@@ -49,7 +49,7 @@ h6 {
     width: 120px;
     height: 1px;
     display: inline-block;
-    background: #1acc8d;
+    background: #cc1616;
     margin: 4px 10px;
 }
 
@@ -61,4 +61,42 @@ h6 {
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     color: #010483;
+}
+
+
+
+.section-title_projet {
+    padding-bottom: 40px;
+    margin-top: 50px;
+}
+
+.section-title_projet h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-title_projet h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #cc1616;
+    margin: 4px 10px;
+}
+
+.section-title_projet p {
+    margin: 0;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
 }

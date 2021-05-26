@@ -264,43 +264,6 @@
   color: #fff;
 }
 
-.projet_box {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.image_projet {
-  height: 190px;
-}
-
-.projet_card {
-  width: 18rem;
-  height: 140px;
-}
-
-.projet_box {
-  height: 390px;
-  margin-top: 5px;
-}
-
-.card-title {
-  height: 40px;
-  font-weight: 700;
-  font-size: 18px;
-  color: #37423b;
-  transition: 0.3s;
-}
-
-.card-title:hover {
-  color: #ed5b5b;
-}
-
-.card-text {
-  color: black;
-  height: 68px;
-  overflow: hidden;
-}
-
 .section__cv {
   background: #f5f5ff;
   padding: 70px 0 60px;
@@ -404,7 +367,7 @@ h6 {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #1acc8d;
+  background: #cc1616;
   margin: 4px 10px;
 }
 
@@ -418,6 +381,42 @@ h6 {
   color: #010483;
 }
 
+.section-title_projet {
+  padding-bottom: 40px;
+  margin-top: 50px;
+}
+
+.section-title_projet h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title_projet h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #cc1616;
+  margin: 4px 10px;
+}
+
+.section-title_projet p {
+  margin: 0;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
 .card__skills .card-title {
   margin-top: 5px;
   font-size: 16px;
@@ -429,7 +428,7 @@ h6 {
 }
 
 .skills_card {
-  margin-bottom: 15px;
+  margin-bottom: 70px;
   background: #191919;
   color: #111010;
   border-top: 4px solid #cc1616;
@@ -442,6 +441,7 @@ h6 {
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
+  margin-bottom: 40px;
 }
 
 .services .icon-box {
@@ -749,6 +749,47 @@ h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+}
+.img-service {
+  width: 560px;
+  height: 315px;
+  margin-bottom: 20px;
+  border-top: 2px solid #ed5b5b;
+  border-left: 2px solid #ed5b5b;
+  border-radius: 10px;
+}
+
+.service_card {
+  height: 450px;
+  margin: 20px;
+}
+
+.service_card_box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 450px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+}
+
+.service_card_box::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  background-color: #CCCCCC;
+}
+
+.service_card_box::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+.service_card_box::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #D62929;
+  background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent);
 }
 
 /*# sourceMappingURL=style.css.map */

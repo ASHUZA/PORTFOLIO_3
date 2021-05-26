@@ -7,7 +7,7 @@
 
 
 
-let projet = document.querySelector("#projets_card");
+let projet = document.querySelector("#projetss_card");
 
 fetch("http://localhost:3000/api/projets").then(function (response) {
     return response.json()
@@ -66,10 +66,10 @@ fetch("http://localhost:3000/api/projets").then(function (response) {
 
 
 
-        let card_texte = document.createElement('p');
-        card_texte.classList.add("card-text");
-        card_texte.textContent = element.detail;
-        card_body.appendChild(card_texte);
+        // let card_texte = document.createElement('p');
+        // card_texte.classList.add("card-text");
+        // card_texte.textContent = element.detail;
+        // card_body.appendChild(card_texte);
 
 
 
