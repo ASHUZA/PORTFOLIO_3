@@ -1,0 +1,79 @@
+
+
+.carte{
+    margin: 10px ;
+    height: 330px;
+    width: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+border-top: 4px solid #cc1616;
+}
+
+.carte:hover {
+
+
+border-top: 6px solid #4297e6;
+
+}
+
+
+
+
+
+.image_projet {
+
+    margin-top: 10px;
+    height: 180px;
+    width: 280px;
+    background-color: rgb(220, 112, 112);
+}
+
+
+.image_projet > img{
+
+    height: 100%;
+    width: 100%;
+   // background-color: rgb(220, 112, 112);
+}
+
+.nom_projet{
+    //align-self: flex-start;
+    //margin-left: -2px;
+    text-transform: uppercase;
+    color: black;
+    margin-top: 5px;
+  //  background-color: rgb(146, 57, 57);
+height: 40px;
+overflow: hidden;
+
+}
+.descriptio_projet{
+
+//    align-self: flex-start;
+   // margin-left: -2px;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-top: 2px;
+    text-transform: lowercase;
+    font-weight: 350;
+    height: 60px;
+    overflow: hidden;
+ //  background-color: rgb(196, 126, 126);
+  color: black;
+  //margin-top: 1px
+}
+.lien_github{
+   // align-self: flex-start;
+    margin-left: 0px;
+ margin-top: 5px;
+ font-weight: 500;
+ text-transform: lowercase;
+ color: rgb(226, 121, 121);
+ height: 20px;
+ overflow: hidden;
+// margin-bottom: 5px;
+ //background-color: blue;
+   
+}

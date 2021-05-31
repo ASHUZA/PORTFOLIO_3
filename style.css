@@ -670,6 +670,61 @@ h6 {
   margin-bottom: 0;
 }
 
+.carte {
+  margin: 10px;
+  height: 330px;
+  width: 300px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-top: 4px solid #cc1616;
+}
+
+.carte:hover {
+  border-top: 6px solid #4297e6;
+}
+
+.image_projet {
+  margin-top: 10px;
+  height: 180px;
+  width: 280px;
+  background-color: #dc7070;
+}
+
+.image_projet > img {
+  height: 100%;
+  width: 100%;
+}
+
+.nom_projet {
+  text-transform: uppercase;
+  color: black;
+  margin-top: 5px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.descriptio_projet {
+  font-size: 14px;
+  margin-right: 10px;
+  margin-top: 2px;
+  text-transform: lowercase;
+  font-weight: 350;
+  height: 60px;
+  overflow: hidden;
+  color: black;
+}
+
+.lien_github {
+  margin-left: 0px;
+  margin-top: 5px;
+  font-weight: 500;
+  text-transform: lowercase;
+  color: #e27979;
+  height: 20px;
+  overflow: hidden;
+}
+
 #hero {
   width: 100%;
   height: 100vh;
