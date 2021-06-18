@@ -1,14 +1,14 @@
-#hero {
+#cover {
     width: 100%;
     height: 100vh;
-    //background: url("../img/hero-bg.jpg") top center;
+    //background: url("../img/cover-bg.jpg") top center;
     background: url("./img/business-work-area.jpg") top center;
     
     background-size: cover;
     position: relative;
   }
   
-  #hero:before {
+  #cover:before {
     content: "";
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -18,11 +18,11 @@
     right: 0;
   }
   
-  #hero .container {
+  #cover .container {
     padding-top: 70px;
   }
   
-  #hero h1 {
+  #cover h1 {
     margin: 0 0 10px 0;
     font-size: 48px;
     font-weight: 700;
@@ -31,13 +31,13 @@
     color: #fff;
   }
   
-  #hero h2 {
+  #cover h2 {
     color: #eee;
     margin-bottom: 30px;
     font-size: 24px;
   }
   
-  #hero .btn-get-started {
+  #cover .btn-get-started {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
@@ -50,32 +50,39 @@
     color: #fff;
   }
   
-  #hero .btn-get-started:hover {
+  #cover .btn-get-started:hover {
     background: #cc1616;
     border-color: #cc1616;
   }
   
   @media (min-width: 1024px) {
-    #hero {
+    #cover {
       background-attachment: fixed;
     }
   }
   
   @media (max-width: 768px) {
-    #hero {
+    #cover {
       text-align: center;
     }
-    #hero .container {
+    #cover .container {
       padding-top: 40px;
     }
-    #hero h1 {
+    #cover h1 {
       font-size: 28px;
       line-height: 36px;
     }
-    #hero h2 {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 30px;
+    #cover .title_detail {
+      font-size: 19px;
+      line-height: 26px;
+      margin-top: -10px;
+     // margin-bottom: -15px;
+    }
+
+    .title_animation{
+      margin-bottom: 50px;
+      height: 80px;
+   //   background-color: rgb(172, 9, 9);
     }
   }
   

@@ -717,7 +717,7 @@ h6 {
   color: black;
 }
 
-#hero {
+#cover {
   width: 100%;
   height: 100vh;
   background: url("./img/business-work-area.jpg") top center;
@@ -725,7 +725,7 @@ h6 {
   position: relative;
 }
 
-#hero:before {
+#cover:before {
   content: "";
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -735,11 +735,11 @@ h6 {
   right: 0;
 }
 
-#hero .container {
+#cover .container {
   padding-top: 70px;
 }
 
-#hero h1 {
+#cover h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
@@ -748,13 +748,13 @@ h6 {
   color: #fff;
 }
 
-#hero h2 {
+#cover h2 {
   color: #eee;
   margin-bottom: 30px;
   font-size: 24px;
 }
 
-#hero .btn-get-started {
+#cover .btn-get-started {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -767,34 +767,39 @@ h6 {
   color: #fff;
 }
 
-#hero .btn-get-started:hover {
+#cover .btn-get-started:hover {
   background: #cc1616;
   border-color: #cc1616;
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #cover {
     background-attachment: fixed;
   }
 }
 @media (max-width: 768px) {
-  #hero {
+  #cover {
     text-align: center;
   }
 
-  #hero .container {
+  #cover .container {
     padding-top: 40px;
   }
 
-  #hero h1 {
+  #cover h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+  #cover .title_detail {
+    font-size: 19px;
+    line-height: 26px;
+    margin-top: -10px;
+  }
+
+  .title_animation {
+    margin-bottom: 50px;
+    height: 80px;
   }
 }
 .img-service {
@@ -852,6 +857,89 @@ h6 {
 
 .carousel_container {
   margin-bottom: 30px;
+}
+
+.title_animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: #eee;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.title_detail {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.title_detail:first-of-type {
+  /* For increasing performance 
+  ID/Class should've been used. 
+  For a small demo 
+  it's okaish for now */
+  animation: showup 2s infinite;
+}
+
+.title_detail:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+
+.title_detail:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
