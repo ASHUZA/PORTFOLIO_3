@@ -337,7 +337,7 @@
   margin: 10px;
   height: 300px;
   width: 300px;
-  background-color: #fff;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -364,18 +364,19 @@
 .nom_projet {
   text-transform: uppercase;
   color: black;
-  margin-top: 5px;
-  height: 40px;
+  margin-top: 10px;
+  height: 20px;
   overflow: hidden;
 }
 
-.descriptio_projet {
+.description_projet {
   font-size: 14px;
   margin-top: 2px;
   text-transform: lowercase;
   font-weight: 350;
-  height: 60px;
+  height: 40px;
   overflow: hidden;
+  text-overflow: ellipsis;
   text-align: center;
   color: black;
 }
@@ -789,53 +790,6 @@ h6 {
 .about_mail, .about_website {
   font-size: 16px;
   margin-left: 26px;
-}
-
-.carte {
-  margin: 10px;
-  height: 300px;
-  width: 300px;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-top: 4px solid #cc1616;
-}
-
-.carte:hover {
-  border-top: 6px solid #4297e6;
-}
-
-.image_projet {
-  margin-top: 10px;
-  height: 180px;
-  width: 280px;
-  background-color: #dc7070;
-}
-
-.image_projet > img {
-  height: 100%;
-  width: 100%;
-}
-
-.nom_projet {
-  text-transform: uppercase;
-  color: black;
-  margin-top: 5px;
-  height: 40px;
-  overflow: hidden;
-}
-
-.descriptio_projet {
-  font-size: 14px;
-  margin-top: 2px;
-  text-transform: lowercase;
-  font-weight: 350;
-  height: 60px;
-  overflow: hidden;
-  text-align: center;
-  color: black;
 }
 
 #cover {

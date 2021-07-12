@@ -7,7 +7,7 @@
 
 
 
-let projet = document.querySelector("#projetss_card");
+let projet = document.querySelector("#projects_elements");
 
 fetch("http://localhost:3500/api/projets").then(function (response) {
     return response.json()
@@ -28,70 +28,52 @@ fetch("http://localhost:3500/api/projets").then(function (response) {
 
 
 
-        let projet__box = document.createElement('div');
-        // projet__box.setAttribute('id', 'projet__box');
-        projet__box.classList.add("col-md-4", "projet_box");
-        projet.appendChild(projet__box);
+        let card_project = document.createElement('div');
+        // card_project.setAttribute('id', 'card_project');
+        card_project.classList.add("card_project");
+        projet.appendChild(card_project);
 
 
-        let projet_card = document.createElement('div');
-        projet_card.classList.add("card", "projet_card");
-        projet__box.appendChild(projet_card);
+        let image_projet = document.createElement('div');
+        image_projet.classList.add("image_projet");
+        card_project.appendChild(image_projet);
+
+
+        let card_link = document.createElement('a');
+        card_link.setAttribute('href',  element.lien);
+        image_projet.appendChild(card_link);
 
 
 
         let projet__image = document.createElement('img');
-        projet__image.classList.add("card-img-top", "image_projet");
+        projet__image.classList.add("img-fluid");
 
-        projet__image.setAttribute('src', "./img/kda4.jpg ");
-        projet_card.appendChild(projet__image);
+        projet__image.setAttribute('src', element.image);
+        projet__image.setAttribute('alt', "image du projet");
 
-
-
-
-
-        let card_body = document.createElement('div');
-        card_body.classList.add("card-body");
-        projet_card.appendChild(card_body);
+        card_link.appendChild(projet__image);
 
 
 
+        let projet_nom_box = document.createElement('div');
+        projet_nom_box.classList.add("nom_projet");
+        card_project.appendChild(projet_nom_box);
 
 
-        let card_title = document.createElement('h5');
-        card_title.classList.add("card-title");
-        card_title.textContent = element.name;
-        card_body.appendChild(card_title);
+        let projets_nom = document.createElement('p');
+        projets_nom.textContent = element.name;
+        projet_nom_box.appendChild(projets_nom);
 
-
-
-
-        // let card_texte = document.createElement('p');
-        // card_texte.classList.add("card-text");
-        // card_texte.textContent = element.detail;
-        // card_body.appendChild(card_texte);
-
-
-
-        let button_box = document.createElement('div');
-        button_box.setAttribute('role', 'group');
-        button_box.setAttribute('arial-label', 'Second group');
-        button_box.classList.add("btn-group", "me-2");
-        card_body.appendChild(button_box);
+        let descriptio_projet = document.createElement('div');
+        descriptio_projet.classList.add("description_projet");
+        card_project.appendChild(descriptio_projet);
 
 
 
-        let Button = document.createElement('button');
-        Button.classList.add("favorite", "styled");
-        Button.setAttribute('type', 'button');
-
-        Button.textContent = "VOIR";
-        button_box.appendChild(Button);
-
+        let projet_detail = document.createElement('h7');
+        projet_detail.textContent = element.detail;
+        descriptio_projet.appendChild(projet_detail);
 
     });
 
 })
-
-
-
