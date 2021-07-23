@@ -290,12 +290,19 @@
   --border-radius-small: 2px;
 }
 
+.projects {
+  background-color: #414141;
+}
+
 .projet-thumb {
   border-top: 4px solid #cc1616;
+  padding: 3px;
+  transition: 1s;
+  background-color: #fff;
 }
 
 .projet-thumb:hover {
-  border-top: 6px solid #4297e6;
+  border-top: 4px solid #4297e6;
 }
 
 .projet-info {
@@ -306,8 +313,9 @@
   position: relative;
 }
 
-.projet-info img {
+.projet-thumb img {
   border-radius: 2px 2px 0 0;
+  border-left: 5px;
 }
 
 .projet-info strong {
@@ -324,7 +332,6 @@
 .projet_detail {
   color: var(--dark-color);
   text-align: center;
-  display: none;
 }
 
 .section__cv {
